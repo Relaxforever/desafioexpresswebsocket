@@ -2,20 +2,19 @@
 <form onsubmit="return addProduct(this)" id="create-product">
   Nombre:
   <input type="text" id="title" name="title" />
+  <br>
   Precio:
   <input type="number" id="price" name="price" />
+  <br>
   Imagen:
   <input type="text" id="thumbnail" name="thumbnail" />
-  <button>Crear</button>
+  <br>
+  <button class="btn btn-primary">Crear</button>
 </form>
-<input
-  type="button"
-  onclick="location.href='/productos';"
-  value="Lista Productos"
-/>
+
 
 <h3>Lista de productos:</h3>
-<table id="ptable-head">
+<table id="ptable-head" class="table table-bordered">
   <thead>
     <tr>
       <th scope="col">Nombre</th>
@@ -48,7 +47,7 @@
       style="width:50%"
     />
     <p></p>
-    <button type="submit">Enviar</button>
+    <button type="submit" class="btn btn-primary">Enviar</button>
 
   </div>
 </form>
